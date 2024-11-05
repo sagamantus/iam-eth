@@ -282,3 +282,17 @@ def get_all_users(current_user: str = Depends(get_current_user)):
         return users
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+    
+# Endpoint to get all users
+@app.get("/users/me")
+def get_my_user(current_user: str = Depends(get_current_user)):
+    iam.wallet_setup(current_user)
+    try:
+        user = dict()
+        user["address"] = iam.web3.eth.account.from_key(current_user).address
+        user["name"] = iam.get_user_data(user["address"], "name")
+        user["dept"] = iam.get_user_data(user["address"], "dept")
+        user["role"] = iam.get_user_role(user["address"])
+        return user
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Figtree:wght@400&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  /* primary */
+  --primary-0: #000000;
+  --primary-10: #21161f;
+  --primary-20: #2c1d29;
+  --primary-30: #362533;
+  --primary-40: #573b52;
+  --primary-50: #724d6c;
+  --primary-60: #a3779b;
+  --primary-70: #b593af;
+  --primary-80: #c8aec3;
+  --primary-90: #dac9d7;
+  --primary-95: #ede4eb;
+  --primary-99: #fff6fd;
+  --primary-100: #ffffff;
+  /* secondary */
+  --secondary-0: #000000;
+  --secondary-10: #302614;
+  --secondary-20: #47391c;
+  --secondary-30: #765f2f;
+  --secondary-40: #8f7239;
+  --secondary-50: #b99750;
+  --secondary-60: #c2a466;
+  --secondary-70: #cbb17c;
+  --secondary-80: #d2be92;
+  --secondary-90: #dccba7;
+  --secondary-95: #f1e4ca;
+  --secondary-99: #fbf3e3;
+  --secondary-100: #ffffff;
+  /* neutral */
+  --neutral-0: #000000;
+  --neutral-10: #1c1b1c;
+  --neutral-20: #313030;
+  --neutral-30: #484646;
+  --neutral-40: #605e5e;
+  --neutral-50: #797676;
+  --neutral-60: #939090;
+  --neutral-70: #adaaaa;
+  --neutral-80: #c9c6c5;
+  --neutral-90: #e5e1e1;
+  --neutral-95: #f4f0ef;
+  --neutral-99: #f8f6f6;
+  --neutral-100: #ffffff;
+  /* error */
+  --error-0: #000000;
+  --error-20: #65090e;
+  --error-10: #410004;
+  --error-30: #852221;
+  --error-40: #a53a36;
+  --error-50: #c5524c;
+  --error-60: #e66a63;
+  --error-70: #ff8981;
+  --error-80: #ffb3ad;
+  --error-90: #ffdad7;
+  --error-95: #ffedeb;
+  --error-99: #fffbff;
+  --error-100: #ffffff;
+  /* // Primary Font */
+  --primary-font: Poppins, sans-serif;
+  --secindary-font: Roboto;
+  /* // Headings */
+  --headings-h1-font-size: 90px;
+  --headings-h1-line-height: 110px;
+
+  --headings-h2-font-size: 60px;
+  --headings-h2-line-height: 64px;
+
+  --headings-h3-font-size: 48px;
+  --headings-h3-line-height: 52px;
+
+  --headings-h4-font-size: 36px;
+  --headings-h4-line-height: 42px;
+
+  --headings-h5-font-size: 30px;
+  --headings-h5-line-height: 36px;
+
+  --headings-h6-font-size: 24px;
+  --headings-h6-line-height: 30px;
+  /*   
+  // Subtitles */
+  --subtitles-subtitle1-font-size: 22px;
+  --subtitles-subtitle1-line-height: 26px;
+
+  --subtitles-subtitle2-font-size: 20px;
+  --subtitles-subtitle2-line-height: 24px;
+
+  /* // Body Text */
+  --bodytext-paragraph1-font-size: 16px;
+  --bodytext-paragraph1-font-weight: 500;
+  --bodytext-paragraph1-line-height: 22px;
+
+  --bodytext-paragraph2-font-size: 12px;
+  --bodytext-paragraph2-font-weight: 500;
+  --bodytext-paragraph2-line-height: 20px;
+
+  --bodytext-paragraph-bold-font-size: 14px;
+  --bodytext-paragraph-bold-font-weight: 700;
+  --bodytext-paragraph-bold-line-height: 20px;
+
+  --bodytext-quotes-font-size: 16px;
+  --bodytext-quotes-line-height: 22px;
+
+  /* // Input Text */
+  --inputtext-labels-font-size: 12px;
+  --inputtext-labels-font-weight: 500;
+  --inputtext-labels-line-height: 16px;
+
+  --inputtext-placeholder-font-size: 16px;
+  --inputtext-placeholder-font-weight: 500;
+  --inputtext-placeholder-line-height: 20px;
+
+  --inputtext-assistive-font-size: 12px;
+  --inputtext-assistive-font-weight: 500;
+
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Custom Scrollbar */
+  *::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: #f2fdff00;
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #dac9d7;
+    /* Primary-90 */
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #724d6c;
+    /* Primary-95 */
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #724d6c;
+    /* Primary-99 */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-99);
+    font-family: var(--primary-font);
+
+    /* color: rgb(var(--foreground-rgb)); */
+    /* background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      ) */
+    /* rgb(var(--background-start-rgb)); */
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

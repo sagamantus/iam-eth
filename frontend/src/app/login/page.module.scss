@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Figtree:wght@400&family=Roboto:wght@400;500&display=swap');
+
+.container {
+  padding: 42px 80px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+  .loginSection {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .header {
+      width: 60%;
+      color: var(--primary-50);
+      font-family: var(--primary-font);
+      font-size: var(--headings-h2-font-size);
+      font-weight: var(--font-weight-semibold);
+      padding: 24px 0;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      gap: 16px;
+
+      
+
+      .loginButton {
+        border-radius: 100px;
+        height: 40px;
+        border-width: 2px;
+        box-shadow: none; 
+        background-color: var(--primary-50);
+        color: white;
+
+        &:hover {
+          
+          background-color: var(--primary-50);
+        }
+        &:disabled {
+          background-color: var(--neutral-grey-200);
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  .graphicSection {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .bannerImage {
+      object-fit: fill;
+      width: 100% !important;
+      position: relative !important;
+    }
+  }
+}

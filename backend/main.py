@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import APIKeyHeader
 from jose import JWTError, jwt
 from pydantic import BaseModel
@@ -10,6 +11,15 @@ from iam import IdentityAndAccessManagement
 dotenv.load_dotenv()
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Configuration
 provider_url = os.getenv("PROVIDER_URL")
